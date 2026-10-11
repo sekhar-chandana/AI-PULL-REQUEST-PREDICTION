@@ -1,0 +1,91 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs and generated outputs
+*.log
+logs/
+Explain_Output/
+outputs/
+tmp/
+temp/
+
+# Datasets and large generated data files
+*.parquet
+final_dataset_labeled.csv
+processed_dataset.csv
+ml_dataset.csv
+# Add other large local-only datasets here as needed.
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Frontend / Node
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Build / OS / editor files
+build/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Git
+*.orig
+scripts/Models/random_forest.pkl
+
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

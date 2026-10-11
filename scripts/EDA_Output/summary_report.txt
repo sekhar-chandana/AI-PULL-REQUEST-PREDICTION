@@ -1,0 +1,96 @@
+================================================================================
+AI PULL REQUEST RISK PREDICTOR
+EDA SUMMARY REPORT
+================================================================================
+
+Dataset Shape : (57994, 23)
+Rows : 57994
+Columns : 23
+
+TARGET DISTRIBUTION
+-------------------------
+bug_label
+0    40767
+1    17227
+Name: count, dtype: int64
+
+TARGET PERCENTAGE
+-------------------------
+Safe : 70.3%
+Buggy : 29.7%
+
+TOP FEATURES
+-------------------------
+commit_count         0.472099
+comment_count        0.351846
+review_count         0.339574
+commented_reviews    0.306146
+files_changed        0.298443
+approved_reviews     0.222902
+test_files           0.193361
+review_time_hours    0.186637
+high_risk_files      0.110047
+stars                0.087529
+
+MISSING VALUES
+-------------------------
+language               0
+stars                  0
+forks                  0
+license                0
+review_count           0
+approved_reviews       0
+commented_reviews      0
+comment_count          0
+commit_count           0
+files_changed          0
+additions              0
+deletions              0
+total_changes          0
+total_lines_changed    0
+test_files             0
+high_risk_files        0
+review_time_hours      0
+bug_label              0
+created_year           0
+created_month          0
+created_day            0
+created_weekday        0
+merged                 0
+dtype: int64
+
+OUTLIERS
+-------------------------
+                Feature  Outliers  Percentage
+0                 stars      8343       14.39
+1                 forks      9192       15.85
+2          review_count      8861       15.28
+3      approved_reviews     12889       22.22
+4     commented_reviews      5935       10.23
+5         comment_count      9043       15.59
+6          commit_count      6702       11.56
+7         files_changed      8576       14.79
+8             additions     11221       19.35
+9             deletions     11725       20.22
+10        total_changes     11042       19.04
+11  total_lines_changed     11042       19.04
+12           test_files     11539       19.90
+13      high_risk_files      4591        7.92
+14    review_time_hours     11820       20.38
+15         created_year        60        0.10
+16        created_month       373        0.64
+17          created_day         0        0.00
+18      created_weekday         0        0.00
+
+SUMMARY
+-------------------------
+1. Dataset contains sufficient samples for ML.
+
+2. Class distribution is acceptable.
+
+3. Numerical features have several outliers.
+
+4. Correlation analysis identifies important predictors.
+
+5. Dataset is ready for Machine Learning.
+
